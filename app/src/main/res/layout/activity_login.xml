@@ -22,11 +22,19 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/icon" />
+
             <EditText
                 android:id="@+id/emailBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="20dp"
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
@@ -38,6 +46,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="20dp"
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="numberPassword"
@@ -47,14 +57,19 @@
                 android:id="@+id/logintbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/button_style"
-                android:text="login" />
+                android:text="login"
+                android:textColor="#E6E0E0" />
 
             <Button
                 android:id="@+id/createbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="crteate an account" />
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style2"
+                android:text="crteate an account"
+                android:textColor="#E6E0E0" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
