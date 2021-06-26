@@ -26,15 +26,22 @@
                 android:id="@+id/emailBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/textbox"
                 android:ems="10"
-                android:inputType="textEmailAddress" />
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/passwordBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
                 android:ems="10"
-                android:inputType="numberPassword" />
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:padding="10dp" />
 
             <Button
                 android:id="@+id/logintbtn"
