@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
+            android:background="#FBFBFB"
             android:orientation="vertical">
 
             <ImageView
@@ -41,6 +42,21 @@
                 android:text="Talkies"
                 android:textColor="#1B1010"
                 android:textSize="30sp" />
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/person"
+                android:ems="10"
+                android:hint="Full Name"
+                android:drawablePadding="20dp"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#201E1E" />
 
             <EditText
                 android:id="@+id/emailBox"
@@ -83,7 +99,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/button_style"
-                android:text="login"
+                android:text="Already Have aan account? "
                 android:textColor="#E6E0E0" />
 
 
