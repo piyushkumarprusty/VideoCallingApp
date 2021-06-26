@@ -46,6 +46,7 @@ public class SignupActivity extends AppCompatActivity {
 
                         if (task.isSuccessful()){
                             // success
+                            Toast.makeText(SignupActivity.this,"Account is Created",Toast.LENGTH_SHORT).show();
 
                         }
                         else {

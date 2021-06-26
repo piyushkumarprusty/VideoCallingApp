@@ -23,6 +23,8 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.logintbtn);
         signupBtn = findViewById(R.id.createbtn);
 
+
+
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
