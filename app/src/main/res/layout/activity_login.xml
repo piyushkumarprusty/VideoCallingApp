@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F486AC"
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
@@ -20,13 +21,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
+            android:background="#98EFE6"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_margin="10dp"
                 app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Talkies"
+                android:textColor="#1B1010"
+                android:textSize="30sp" />
 
             <EditText
                 android:id="@+id/emailBox"
