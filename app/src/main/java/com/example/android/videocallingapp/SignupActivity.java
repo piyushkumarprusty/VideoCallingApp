@@ -13,9 +13,14 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.net.UnknownServiceException;
 
 public class SignupActivity extends AppCompatActivity {
     FirebaseAuth auth;
+    FirebaseFirestore database;
+
     EditText emailBox, passwordBox,nameBox;
     Button loginBtn, signupBtn;
 
@@ -24,7 +29,8 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        auth = FirebaseAuth.getInstance();  //it create an instance with firebase and user create an new account this
+        database = FirebaseFirestore.getInstance();     // to store data in fireStore
+        auth = FirebaseAuth.getInstance();              //it create an instance with firebase and user create an new account this
 
         emailBox = findViewById(R.id.emailBox);
         nameBox = findViewById(R.id.nameBox);
@@ -40,6 +46,11 @@ public class SignupActivity extends AppCompatActivity {
                 email = emailBox.getText().toString();
                 name = nameBox.getText().toString();
                 pass = passwordBox.getText().toString();
+
+                User user = new User();
+                user.setEmail(email);
+                user.setPass(pass);
+                user.setName(name);
 
                 auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
