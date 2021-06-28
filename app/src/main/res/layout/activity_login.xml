@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/screen"
+    android:background="@drawable/kk"
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:cardCornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +22,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:background="#F6EBEB"
             android:orientation="vertical">
 
             <ImageView
@@ -66,12 +66,23 @@
                 android:hint="Password"
                 android:inputType="numberPassword"
                 android:padding="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Forgot Password?"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"/>
+
+
 
             <Button
                 android:id="@+id/logintbtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/button_style"
                 android:text="login"
                 android:textColor="#E6E0E0" />
@@ -79,8 +90,9 @@
             <Button
                 android:id="@+id/createbtn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
                 android:background="@drawable/button_style2"
                 android:text="create an account"
                 android:textColor="#E6E0E0" />
