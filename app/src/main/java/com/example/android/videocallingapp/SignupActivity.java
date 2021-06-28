@@ -25,6 +25,7 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         auth = FirebaseAuth.getInstance();  //it create an instance with firebase and user create an new account this
+
         emailBox = findViewById(R.id.emailBox);
         nameBox = findViewById(R.id.nameBox);
         passwordBox = findViewById(R.id.passwordBox);
