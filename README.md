@@ -14,4 +14,7 @@ Welcome to my video calling app
 
 <img src="https://user-images.githubusercontent.com/83058841/123664778-48322e00-d855-11eb-9861-2a80c2f35d67.png" width="280" height="480">
 
+<h4> New Ui </h4>
+<img src="https://user-images.githubusercontent.com/83058841/123797734-1e841000-d904-11eb-8c08-b494294819bd.png" width="280" height="480">
 
+<img src="https://user-images.githubusercontent.com/83058841/123797769-280d7800-d904-11eb-9ab7-e3b8205c7b8d.png" width="280" height="480">
